@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 40px;
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  background-color: black;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav h1 {
+  font-size: 1.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+  background: white;
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px 24px;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #8c0000;
+}
+
+/* Headings */
+h2, h3 {
+  text-align: center;
+  margin-top: 20;
+  color: black;
+}
+
+/* Utility Classes */
+.center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b30000;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #8c0000;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  nav ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+.logo {
+  height:60px;
+}
+nav ul{
+  display:flex;
+  gap:20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+nav li{
+  margin: 0;
+  padding: 0;
+}
+header{
+  position:sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000;
+}
+p{
+  color: white;
+  font-size: 1.5em;
+  max-width: 800px;
+  text-align: center;
+  margin-left: 380px;
+  display: block;
+}
+h1{
+  color:black;
+  font-size: 3em;
+  margin-bottom: 20px;
+
+}
+nav li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+  color:#333;
+  margin: 0;
+
+}
+.form-container{
+  background-color:bisque;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.form-container form input,
+.form-container form label{
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 16px;
+}

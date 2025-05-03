@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Receiver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('bg.png');">
+  <nav>
+    <img src="logo.png" class="logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="donor.html">Register Donor</a></li>
+      <li><a href="receiver.html">Register Receiver</a></li>
+      <li><a href="view_donors.php">View Donors</a></li>
+      <li><a href="view_receiver.php">View Receivers</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="certificate_form.php">Download certificate</a></li>
+    </ul>
+  </nav>
+  
+  <h2>Register Receiver</h2>
+  <div class="form-container">
+    <form action="register_receiver.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="text" name="age"  placeholder="Enter Your Age" required>
+      <input type="text" name="blood_group" placeholder="Blood Group" required>
+      <input type="text" name="contact" placeholder="Phone Number" 
+      pattern="\d{10}" maxlength="10" required 
+      oninvalid="this.setCustomValidity('Phone number must be exactly 10 digits')" 
+      oninput="this.setCustomValidity('')" 
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+      <textarea name="medical_conditions" placeholder="Medical Conditions"></textarea>
+      <input type="text" name="aadhar" placeholder="Aadhar Number" 
+      pattern="\d{12}" maxlength="12" required 
+      oninvalid="this.setCustomValidity('Aadhar number must be exactly 12 digits')" 
+      oninput="this.setCustomValidity('')" 
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+      <input type="email" name="gmail" placeholder="Gmail" required>
+      <input type="text" name="gender" placeholder="Gender (M/F/O)" required>
+      <input type="date" name="dob" placeholder="Date of Birth" required>
+      <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
